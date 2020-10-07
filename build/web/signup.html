@@ -1,0 +1,51 @@
+<!--Signup page-->
+<!DOCTYPE html>
+<head>
+    <title>SIGN UP</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <style type="text/css">
+    video{
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -999;
+        top: 0px;
+        bottom: 0px;
+        position: fixed;
+    }
+    
+    .margin{
+        margin: 12px;
+    }
+    </style>
+</head>
+<body>
+    <video autoplay loop muted><source src="images/v.mp4" type="video/mp4"></video>
+    <header class="overlay">
+        <nav>
+            <div class="row clearfix">
+                <img src="images/logo.png" class="logo"/>
+                <ul class="main-nav animated slideInDown">
+                    <li><a href="index.jsp">home</a></li>   
+                    <li><a href="admin/">ADMIN</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="signup.html">SIGN UP</a></li>
+                </ul>
+                <div class="main-content-header overlay">
+                <form action="signup" method="POST">
+                    <input type="text" name="fname"  placeholder="Firstname" class="text-input margin" required />
+                    <input type="text" name="lname"  placeholder="Lastname" class="text-input margin" required /><br>
+                    <input type="email" name="email"  placeholder="Email" class="text-input margin" required />
+                    <input type="text" name="mobile"  placeholder="Mobile no." class="text-input margin" required/> <br>
+                    <input type="password" name="password" placeholder="Password" class="text-input margin" required />
+                    <input type="password" name="cpassword"  placeholder="Confirm Password" class="text-input margin" required /><br>
+                    <input style="margin:12px 12px 12px 140px;" type="submit" class="btn btn-full" value="   Sign up   " />     
+                </form> 
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>
